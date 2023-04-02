@@ -1,0 +1,25 @@
+I want you to turn this Figma design to html/css
+
+https://www.figma.com/file/9pAzNeUTh0uh1cHcKXnEHP/Manchester-Airport-Transfer---Design-File?node-id=0%3A1&t=8S5g7FWCyfgetiLk-1
+
+Replacing https://www.manchesterairporttaxi.vip
+
+The top form needs to have some mandatory requirements, but you can see it here:
+
+https://www.manchesterairporttaxi.vip
+
+Form needs to be just sent to an email address.
+
+Testimonial needs to scroll so can add more on the future.
+
+The about us, contact us and thank you page is outstanding (not on figma) But simple enough, you can see them here, they will be basic text, image and contact form.
+
+You can see them here.
+
+https://www.manchesterairporttaxi.vip/about-us-airport-taxi-manchester/
+
+https://www.manchesterairporttaxi.vip/contact-us/
+
+Easy for someone who knows, html and css.
+
+You must host on own server or build locally for me see it working exactly or I can give some space on my host. 
