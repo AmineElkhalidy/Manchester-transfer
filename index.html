@@ -32,13 +32,13 @@
           background-color: white;
           transition: 0.4s;
           box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
-          border-radius: 0 0 1rem 1rem;
+          border-radius: 1rem;
           z-index: 100;
         }
       }
 
       .show-menu {
-        top: 8rem;
+        top: 7rem;
       }
     </style>
 
@@ -67,7 +67,7 @@
     <!-- Header -->
     <header class="w-full bg-white shadow-sm">
       <nav
-        class="h-24 max-w-6xl mx-auto flex justify-between items-center px-6"
+        class="h-24 max-w-6xl mx-auto flex justify-between items-center px-6 xl:px-0"
       >
         <a href="#">
           <img src="./assets/images/Logo.svg" alt="Logo" />
@@ -172,7 +172,7 @@
               border-radius: 25px;
             "
           >
-            <h3 class="text-[30px] text-black font-semibold mb-6">
+            <h3 class="text-3xl text-black font-semibold mb-6">
               <span class="text-main">Journey</span> Details
             </h3>
 
@@ -281,7 +281,7 @@
                 <div
                   class="h-full w-full bg-transparent border border-[#EFEFEF] rounded-[15px] overflow-hidden flex items-center p-4 gap-4"
                 >
-                  <img src="./assets/images/bags.svg" alt="Phone icon" />
+                  <img src="./assets/images/baggs.svg" alt="Phone icon" />
 
                   <input
                     type="number"
@@ -335,11 +335,9 @@
           </form>
 
           <!-- Data Container -->
-          <div class="mt-10 flex items-center">
+          <div class="mt-10 flex justify-between items-center">
             <div class="w-full">
-              <h2
-                class="capitalize text-[60px] font-medium leading-[60px] mb-6 text-black"
-              >
+              <h2 class="capitalize text-5xl font-medium mb-6 text-black">
                 Welcome to<br />
                 <span class="text-main">Manchester</span>
                 airport<br />
@@ -378,13 +376,15 @@
       </section>
 
       <!-- Transfer Service -->
-      <section class="my-20">
-        <div class="flex px-6 max-w-6xl mx-auto gap-12">
+      <section class="my-24">
+        <div
+          class="flex items-center justify-between px-6 max-w-6xl mx-auto gap-12"
+        >
           <div class="w-full">
-            <h3 class="text-main capitalize text-[25px]">
+            <h3 class="text-main capitalize text-lg">
               Manchester Airport Taxi
             </h3>
-            <h2 class="text-[70px] text-black leading-[80px] mb-4">
+            <h2 class="text-5xl text-black mb-4">
               <span class="inline-flex flex-col text-main">Airport </span>
               Transfers
             </h2>
@@ -419,20 +419,20 @@
       </section>
 
       <!-- Stress Free -->
-      <section
-        class="my-20 h-[80vh] bg-[url('./assets/images/light-yellow-bg.svg')]"
-      >
-        <div class="flex px-6 max-w-6xl mx-auto gap-12">
-          <div class="w-full">
-            <img src="./assets/images/man-pc.png" alt="Door opened" />
-          </div>
+      <section class="my-24 bg-main bg-opacity-20">
+        <div class="flex px-6 max-w-6xl mx-auto gap-10 py-12">
+          <img
+            class="w-full"
+            src="./assets/images/man-pc.png"
+            alt="Door opened"
+          />
 
           <div class="w-full">
-            <h2 class="text-[70px] text-black leading-[80px] mb-4">
+            <h2 class="text-5xl text-black mb-4">
               Stress Free
-              <span class="inline-flex flex-col text-main">Travel </span>
+              <span class="text-main">Travel </span>
             </h2>
-            <p class="">
+            <p>
               Travelling can be stressful. particularly, if you’re unfamiliar
               with the area or worried about missing your flight. That’s where
               we can help. Manchester airport taxis provides a comfortable and
@@ -456,14 +456,14 @@
       </section>
 
       <!-- Vehicles -->
-      <section class="my-28">
-        <div class="flex px-6 max-w-6xl mx-auto gap-12">
+      <section class="my-24">
+        <div class="flex px-6 max-w-6xl mx-auto gap-10">
           <div class="w-full">
-            <h2 class="text-[70px] text-black leading-[80px] mb-4">
-              <span class="inline-flex flex-col text-main">Range </span>
+            <h2 class="text-5xl text-black mb-4">
+              <span class="text-main">Range </span>
               Of Vehicles
             </h2>
-            <p class="">
+            <p>
               Whether you’re travelling by yourself, with family or in a larger
               group, Manchester airport taxis are available to accommodate your
               needs. Furthermore, with vehicles ranging from saloons, estates,
@@ -498,8 +498,8 @@
       </section>
 
       <!-- Safety & Comfort -->
-      <section class="my-20 h-[80vh] bg-main bg-opacity-10">
-        <div class="flex px-6 max-w-6xl mx-auto gap-12">
+      <section class="my-24 bg-main bg-opacity-10">
+        <div class="flex px-6 max-w-6xl mx-auto gap-10 py-12">
           <div class="w-full relative">
             <img
               class=""
@@ -509,8 +509,8 @@
             />
           </div>
 
-          <div class="w-full">
-            <h2 class="text-[70px] text-black leading-[80px] mb-4">
+          <div class="w-full pt-8">
+            <h2 class="text-5xl text-black mb-4">
               Safety and <span class="text-main">Comfort</span>
             </h2>
             <p class="">
@@ -537,11 +537,11 @@
       </section>
 
       <!-- Valued Customers -->
-      <section class="my-20 bg-[url('./assets/images/dark-bg.png')]">
-        <div class="max-w-6xl mx-auto px-6">
+      <section class="my-24 bg-[url('./assets/images/dark-bg.png')]">
+        <div class="max-w-6xl mx-auto px-6 py-12 xl:px-0">
           <div class="w-full h-full flex justify-center items-center">
             <div class="text-white py-10 text-center">
-              <h2 class="text-[70px]">
+              <h2 class="text-5xl mb-6">
                 Valued <span class="text-main">Customers</span>
               </h2>
               <p class="max-w-3xl">
@@ -563,12 +563,12 @@
       </section>
 
       <!-- Features -->
-      <section>
+      <section class="my-24">
         <div class="max-w-6xl mx-auto">
           <div class="grid grid-cols-4 gap-4">
             <!-- Feature 1 -->
             <div
-              class="text-center flex flex-col items-center py-6 px-3"
+              class="text-center w-full flex flex-col items-center py-6 px-3"
               style="box-shadow: 0px 12px 60px rgba(0, 115, 236, 0.07)"
             >
               <img class="s" src="./assets/images/location.svg" alt="" />
@@ -636,20 +636,18 @@
       </section>
 
       <!-- Benefits Of Booking -->
-      <section class="my-20">
+      <section class="my-24">
         <div class="max-w-6xl mx-auto">
-          <h2 class="text-center">
+          <h2 class="text-center text-5xl text-black mb-6">
             <span class="text-main">Benefits</span> Of Booking With Us
           </h2>
-          <div class="w-full flex gap-8">
+          <div class="w-full flex gap-12">
             <img class="w-full" src="./assets/images/taxi.svg" alt="Taxi" />
-            <div class="w-full">
+            <div class="w-full pt-10">
               <img src="./assets/images/item-2.svg" alt="" />
               <img src="./assets/images/item-1.svg" alt="" />
               <img src="./assets/images/item-3.svg" alt="" />
               <img src="./assets/images/item-4.svg" alt="" />
-              <img src="./assets/images/item-5.svg" alt="" />
-              <img src="./assets/images/item-6.svg" alt="" />
             </div>
           </div>
         </div>
@@ -657,33 +655,47 @@
 
       <!-- Features -->
       <section class="bg-main bg-opacity-20">
-        <div class="max-w-6xl mx-auto py-20">
-          <div class="grid grid-cols-3">
-            <div class="">
+        <div class="max-w-6xl mx-auto flex items-center justify-center py-12">
+          <div class="flex justify-between w-full">
+            <div class="flex flex-col items-center gap-2">
               <img src="./assets/images/dark-sheild.svg" alt="" />
-              <h3 class="">Surge-free Guarantee</h3>
+              <h3 class="text-black text-2xl font-semibold">
+                Surge-free Guarantee
+              </h3>
             </div>
 
-            <div class="">
+            <div class="flex flex-col items-center gap-2">
               <img src="./assets/images/flight.svg" alt="" />
-              <h3 class="">Book for Now or Later</h3>
+              <h3 class="text-black text-2xl font-semibold">
+                Book for Now or Later
+              </h3>
             </div>
 
-            <div class="">
+            <div class="flex flex-col items-center gap-2">
               <img src="./assets/images/crypto.svg" alt="" />
-              <h3 class="">Cashless & <br />Cryptocurrency Payment</h3>
+              <h3 class="text-black text-2xl text-center font-semibold">
+                Cashless & <br />Cryptocurrency Payment
+              </h3>
             </div>
           </div>
         </div>
       </section>
 
+      <!-- Testimonials -->
+      <section class="my-24">
+        <h2 class="text-center text-5xl text-black">
+          What Our <span class="text-main">Client</span> Says
+        </h2>
+        <div class="max-w-6xl mx-auto px-6"></div>
+      </section>
+
       <!-- Book Taxi -->
-      <section class="my-20">
-        <div class="max-w-6xl mx-auto bg-main py-10">
-          <div class="flex justify-center items-center">
+      <section>
+        <div class="max-w-6xl mx-auto bg-main py-3 rounded-3xl">
+          <div class="flex justify-center items-center px-6">
             <!-- Data Container -->
-            <div class="">
-              <h2 class="">Call Us To Book A Taxi</h2>
+            <div class="w-full">
+              <h2 class="text-5xl text-black mb-3">Call Us To Book A Taxi</h2>
               <p class="">Our agents will be happy to help</p>
 
               <!-- Buttons container -->
@@ -700,7 +712,7 @@
               </div>
             </div>
 
-            <img src="./assets/images/call.png" alt="" />
+            <img class="w-[80%]" src="./assets/images/call.png" alt="" />
           </div>
         </div>
       </section>
@@ -708,32 +720,36 @@
 
     <!-- Footer -->
     <footer class="mt-24 mb-12">
-      <div class="max-w-6xl mx-auto bg-black rounded-xl pt-10 pb-3">
-        <div class="grid grid-cols-3">
+      <div class="max-w-6xl mx-auto bg-black rounded-3xl pt-10 pb-3">
+        <div class="flex w-full justify-between items-center px-6">
           <img src="./assets/images/Logo-Footer.svg" alt="Footer logo" />
 
           <div class="text-white">
-            <h3 class="">Address</h3>
-            <p class="">
+            <h3 class="text-2xl mb-3">Address</h3>
+            <p class="text-gray-500">
               20 Wincombe St, Rusholme,<br />
               Manchester M14 7PJ
             </p>
           </div>
 
           <div class="text-white">
-            <h3 class="">Contacts</h3>
-            <div class="">
-              <a href="tel:07970 399516">07970 399516</a>
-              <a href="mailto:info@manchesterairporttaxi.vip"
+            <h3 class="text-2xl mb-3">Contacts</h3>
+            <div class="text-gray-500 flex flex-col">
+              <a class="duration-300 hover:text-main" href="tel:07970 399516"
+                >07970 399516</a
+              >
+              <a
+                class="duration-300 hover:text-main"
+                href="mailto:info@manchesterairporttaxi.vip"
                 >info@manchesterairporttaxi.vip</a
               >
             </div>
           </div>
         </div>
 
-        <div class="w-full px-6 my-6">
-          <div class="rounded-xl py-6 text-center bg-white">
-            <p class="text-black">
+        <div class="w-full px-6 mt-16">
+          <div class="rounded-full py-4 text-center bg-white">
+            <p class="text-black font-medium">
               Transport Solutions © 2023 All rights reserved. See Privacy Policy
             </p>
           </div>
