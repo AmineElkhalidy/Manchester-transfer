@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Manchester Airport Transfer</title>
+
+    <!-- Rubik Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Custom Styles -->
+    <style>
+      @media screen and (max-width: 768px) {
+        .nav__menu {
+          position: fixed;
+          top: -100%;
+          right: 1.5rem;
+          width: 50%;
+          padding: 1.5rem 0 1rem;
+          text-align: center;
+          background-color: white;
+          transition: 0.4s;
+          box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+          border-radius: 1rem;
+          z-index: 100;
+        }
+      }
+
+      .show-menu {
+        top: 7rem;
+      }
+    </style>
+
+    <!-- TailwindCSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              main: "#FFCF17",
+              textColor: "#19202B99",
+              lightBg: "#FFFBEC",
+              blueLinear:
+                "linear-gradient(117.83deg, #0073EC 20.63%, #2E93FF 86.23%)",
+            },
+            fontFamily: {
+              rubik: ["Rubik", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="font-rubik text-textColor">
+    <!-- Header -->
+    <header class="w-full bg-white shadow-sm">
+      <nav
+        class="h-24 max-w-6xl mx-auto flex justify-between items-center px-6 xl:px-0"
+      >
+        <a href="#">
+          <img src="./assets/images/Logo.svg" alt="Logo" />
+        </a>
+
+        <!-- Mobile menu -->
+        <div class="nav__menu md:hidden" id="nav-menu">
+          <ul class="flex flex-col gap-3 text-black">
+            <li>
+              <a href="#" class="nav__link font-semibold text-main">Home</a>
+            </li>
+            <li>
+              <a
+                href="about.html"
+                class="nav__link duration-300 hover:text-main hover:font-semibold"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                href="contact.html"
+                class="nav__link duration-300 hover:text-main hover:font-semibold"
+                >Contact</a
+              >
+            </li>
+            <li>
+              <a
+                class="inline-flex gap-3 text-black duration-300 hover:text-main"
+                href="tel:07970399516"
+              >
+                <img src="./assets/images/calling.svg" alt="Phone icon" />
+                07970399516
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Desktop Menu -->
+        <ul class="hidden md:flex gap-8 text-black">
+          <li class="">
+            <a
+              href="index.html"
+              class="nav__link font-semibold duration-300 hover:text-main"
+              >Home</a
+            >
+          </li>
+          <li class="">
+            <a href="about.html" class="nav__link text-main font-semibold"
+              >About</a
+            >
+          </li>
+          <li class="">
+            <a
+              href="contact.html"
+              class="nav__link duration-300 hover:text-main hover:font-semibold"
+              >Contact</a
+            >
+          </li>
+        </ul>
+
+        <div class="hidden md:block">
+          <a class="inline-flex gap-3 text-black" href="tel:07970399516">
+            <img src="./assets/images/calling.svg" alt="Phone icon" />
+            07970399516
+          </a>
+        </div>
+
+        <div class="cursor-pointer md:hidden" id="nav-toggle">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            fill="#000000"
+            viewBox="0 0 256 256"
+          >
+            <path
+              d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128ZM40,72H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16ZM216,184H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z"
+            ></path>
+          </svg>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main -->
+    <main class="overflow-hidden">
+      <section class="mt-10">
+        <div class="max-w-6xl mx-auto">
+          <div class="flex justify-between w-full items-center gap-10">
+            <!-- Data Container -->
+            <div class="w-full">
+              <span class="text-main">About Us</span>
+              <h2 class="text-5xl font-medium mb-3 text-black">
+                Manchester <span class="text-main">Airport</span> Taxi
+              </h2>
+              <p class="">
+                We are a Manchester based company providing transport across the
+                entire UK. We offer a reliable and punctual service specialising
+                in airport transfers. At Manchester airport taxi, we understand
+                that travel can be stressful, which is why we strive to make
+                your journey as seamless and effortless as possible. We take
+                pride in our attention to detail, ensuring that every client
+                receives a personalised service tailored to their specific
+                needs. We believe in listening to our customers and
+                understanding their requirements, ensuring that we deliver a
+                service that exceeds their expectations. We use customer
+                feedback to continually improve our service, identifying areas
+                for improvement and implementing changes that enhance our
+                customers' experience.<br /><br />In summary, at Manchester
+                Airport Taxi Service, we are committed to providing a reliable,
+                efficient and customer focused service that prioritises
+                integrity, commitment and customer satisfaction. We believe that
+                prioritising these values, we can create a culture of trust,
+                accountability and excellence that ensures our long term success
+                and prosperity.
+              </p>
+            </div>
+
+            <img
+              class="w-full"
+              src="./assets/images/about__img.svg"
+              alt="Taking Taxi"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- Our Values -->
+      <section class="bg-main bg-opacity-20 my-24">
+        <div class="max-w-6xl mx-auto">
+          <div class="w-full flex justify-between items-center gap-10">
+            <img
+              src="./assets/images/about__features.svg"
+              alt="Our Values"
+              class="w-full"
+            />
+
+            <!-- Data Container -->
+            <div class="w-full">
+              <h2 class="text-5xl font-medium mb-3 text-black">
+                Our <span class="text-main">Values</span>
+              </h2>
+              <p class="">
+                We believe that integrity and commitment are essential values
+                that guide us in our daily operations. We take pride in
+                providing a reliable and efficient airport transfer service that
+                prioritises our customers' needs and expectations. Integrity is
+                at the core of everything we do. We believe in being
+                transparent, honest and ethical in all our dealings, ensuring
+                that our customers receive a trustworthy and dependable service.
+                We prioritise safety and adhere to the highest standards of
+                professionalism. Our commitment to excellence is evident in
+                every aspect of our service.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="mt-24 mb-12">
+      <div class="max-w-6xl mx-auto bg-black rounded-3xl pt-10 pb-3">
+        <div class="flex w-full justify-between items-center px-6">
+          <img src="./assets/images/Logo-Footer.svg" alt="Footer logo" />
+
+          <div class="text-white">
+            <h3 class="text-2xl mb-3">Address</h3>
+            <p class="text-gray-500">
+              20 Wincombe St, Rusholme,<br />
+              Manchester M14 7PJ
+            </p>
+          </div>
+
+          <div class="text-white">
+            <h3 class="text-2xl mb-3">Contacts</h3>
+            <div class="text-gray-500 flex flex-col">
+              <a class="duration-300 hover:text-main" href="tel:07970 399516"
+                >07970 399516</a
+              >
+              <a
+                class="duration-300 hover:text-main"
+                href="mailto:info@manchesterairporttaxi.vip"
+                >info@manchesterairporttaxi.vip</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="w-full px-6 mt-16">
+          <div class="rounded-full py-4 text-center bg-white">
+            <p class="text-black font-medium">
+              Transport Solutions © 2023 All rights reserved. See Privacy Policy
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="./assets/scripts/main.js"></script>
+  </body>
+</html>
