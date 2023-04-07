@@ -131,7 +131,14 @@
         </ul>
 
         <div class="hidden md:block">
-          <a class="inline-flex gap-3 text-black" href="tel:07970399516">
+          <a
+            class="inline-flex gap-3 text-black px-12 py-4 font-medium border"
+            style="
+              box-shadow: 30px 30px 50px rgba(255, 207, 23, 0.07);
+              border-radius: 37.5px 37.5px 0px 37.5px;
+            "
+            href="tel:07970399516"
+          >
             <img src="./assets/images/calling.svg" alt="Phone icon" />
             07970399516
           </a>
@@ -157,9 +164,9 @@
     <main class="overflow-hidden">
       <!-- Hero -->
       <section
-        class="w-full min-h-screen bg-[url('./assets/images/shape.svg')] bg-no-repeat bg-right"
+        class="w-full min-h-screen bg-[url('./assets/images/shape.svg')] bg-no-repeat bg-right bg-top"
       >
-        <div class="max-w-6xl mx-auto px-6">
+        <div class="max-w-6xl mx-auto px-6 xl:px-0">
           <form
             action="#"
             class="bg-white p-6 mt-6"
@@ -173,9 +180,9 @@
             </h3>
 
             <!-- Boxes Container -->
-            <div class="flex flex-col gap-4">
+            <div class="flex flex-col gap-12 md:gap-4">
               <!-- Box Container 1 -->
-              <div class="grid grid-cols-3 gap-4">
+              <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
                 <div
                   class="h-full w-full bg-transparent border border-[#EFEFEF] rounded-[15px] overflow-hidden flex items-center p-4 gap-4"
                 >
@@ -218,7 +225,7 @@
               </div>
 
               <!-- Box Container 2 -->
-              <div class="grid grid-cols-3 gap-4">
+              <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
                 <div
                   class="h-full w-full bg-transparent border border-[#EFEFEF] rounded-[15px] overflow-hidden flex items-center p-4 gap-4"
                 >
@@ -261,7 +268,7 @@
               </div>
 
               <!-- Box Container 3 -->
-              <div class="grid grid-cols-3 gap-4">
+              <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
                 <div
                   class="h-full w-full bg-transparent border border-[#EFEFEF] rounded-[15px] overflow-hidden flex items-center p-4 gap-4"
                 >
@@ -318,7 +325,7 @@
               <div class="mb-2">
                 <button
                   type="submit"
-                  class="bg-main text-black px-16 py-4 font-medium"
+                  class="bg-main text-black px-16 py-4 font-medium duration-300 hover:bg-transparent hover:border hover:border-main hover:text-main"
                   style="
                     box-shadow: 30px 30px 50px rgba(255, 207, 23, 0.07);
                     border-radius: 37.5px 37.5px 0px 37.5px;
@@ -331,18 +338,22 @@
           </form>
 
           <!-- Data Container -->
-          <div class="mt-10 flex justify-between items-center">
+          <div
+            class="mt-10 flex flex-col md:flex-row md:justify-between md:items-center"
+          >
             <div class="w-full">
-              <h2 class="capitalize text-5xl font-medium mb-6 text-black">
+              <h2
+                class="capitalize text-4xl sm:text-5xl font-medium mb-6 text-black"
+              >
                 Welcome to<br />
                 <span class="text-main">Manchester</span>
                 airport<br />
                 taxi services
               </h2>
               <!-- Buttons container -->
-              <div class="space-x-4">
+              <div class="flex gap-4 flex-wrap">
                 <button
-                  class="bg-main text-black px-16 py-4 font-medium"
+                  class="bg-main text-black px-16 py-4 font-medium duration-300 hover:bg-transparent hover:border hover:border-main hover:text-main"
                   style="
                     box-shadow: 30px 30px 50px rgba(255, 207, 23, 0.07);
                     border-radius: 37.5px 37.5px 0px 37.5px;
@@ -352,7 +363,7 @@
                 </button>
 
                 <button
-                  class="bg-transparent border border-main text-main px-16 py-4 font-medium"
+                  class="bg-transparent border border-main text-main px-16 py-4 font-medium duration-300 hover:bg-main hover:border-none hover:text-black"
                   style="
                     box-shadow: 30px 30px 50px rgba(255, 207, 23, 0.07);
                     border-radius: 37.5px 37.5px 0px 37.5px;
@@ -373,79 +384,83 @@
 
       <!-- Transfer Service -->
       <section class="my-24">
-        <div
-          class="flex items-center justify-between px-6 max-w-6xl mx-auto gap-12"
-        >
-          <div class="w-full">
-            <h3 class="text-main capitalize text-lg">
-              Manchester Airport Taxi
-            </h3>
-            <h2 class="text-5xl text-black mb-4">
-              <span class="inline-flex flex-col text-main">Airport </span>
-              Transfers
-            </h2>
-            <p class="">
-              We are a Manchester based company providing transport across the
-              entire UK. Additionally, we offer a reliable and punctual service
-              specialising in airport transfers. If you need a taxi to Heathrow,
-              Gatwick, Stansted, Luton, East Midlands, Birmingham, Bristol,
-              Cardiff, Sheffield, Leeds Bradford, Newcastle, Blackpool,
-              Liverpool, Aberdeen, Edinburgh, Glasgow or any other airport we’ve
-              got you covered.
-            </p>
+        <div class="max-w-6xl mx-auto px-6 xl:px-0">
+          <div
+            class="w-full flex flex-col gap-10 md:flex-row md:justify-between"
+          >
+            <div class="w-full">
+              <h3 class="text-main capitalize text-lg">
+                Manchester Airport Taxi
+              </h3>
+              <h2 class="text-4xl sm:text-5xl text-black mb-4">
+                <span class="inline-flex flex-col text-main">Airport </span>
+                Transfers
+              </h2>
+              <p>
+                We are a Manchester based company providing transport across the
+                entire UK. Additionally, we offer a reliable and punctual
+                service specialising in airport transfers. If you need a taxi to
+                Heathrow, Gatwick, Stansted, Luton, East Midlands, Birmingham,
+                Bristol, Cardiff, Sheffield, Leeds Bradford, Newcastle,
+                Blackpool, Liverpool, Aberdeen, Edinburgh, Glasgow or any other
+                airport we’ve got you covered.
+              </p>
 
-            <!-- Buttons container -->
-            <div>
-              <button
-                class="bg-main text-black px-16 py-4 font-medium mt-8"
-                style="
-                  box-shadow: 30px 30px 50px rgba(255, 207, 23, 0.07);
-                  border-radius: 37.5px 37.5px 0px 37.5px;
-                "
-              >
-                Know More
-              </button>
+              <!-- Buttons container -->
+              <div>
+                <button
+                  class="bg-main text-black px-16 py-4 font-medium mt-8 duration-300 hover:bg-transparent hover:border hover:border-main hover:text-main"
+                  style="
+                    box-shadow: 30px 30px 50px rgba(255, 207, 23, 0.07);
+                    border-radius: 37.5px 37.5px 0px 37.5px;
+                  "
+                >
+                  Know More
+                </button>
+              </div>
             </div>
-          </div>
 
-          <div class="w-full">
-            <img src="./assets/images/opening door.svg" alt="Door opened" />
+            <div class="w-full flex items-center justify-center">
+              <img src="./assets/images/opening door.svg" alt="Door opened" />
+            </div>
           </div>
         </div>
       </section>
 
       <!-- Stress Free -->
       <section class="my-24 bg-main bg-opacity-20">
-        <div class="flex px-6 max-w-6xl mx-auto gap-10 py-12">
-          <img
-            class="w-[80%]"
-            src="./assets/images/man-pc.png"
-            alt="Door opened"
-          />
+        <div class="max-w-6xl mx-auto px-6 xl:px-0">
+          <div class="flex flex-col md:flex-row md:gap-10 py-12">
+            <img
+              class="w-[80%] self-center md:self-start"
+              src="./assets/images/man-pc.png"
+              alt="Door opened"
+            />
 
-          <div class="w-full">
-            <h2 class="text-5xl text-black mb-4">
-              Stress Free
-              <span class="text-main">Travel </span>
-            </h2>
-            <p>
-              Travelling can be stressful. particularly, if you’re unfamiliar
-              with the area or worried about missing your flight. That’s where
-              we can help. Manchester airport taxis provides a comfortable and
-              convenient way to get you to your desired location.
-            </p>
+            <div class="w-full mt-8 md:mt-0 text-center md:text-left">
+              <h2 class="text-4xl sm:text-5xl text-black mb-4">
+                Stress Free
+                <span class="text-main">Travel </span>
+              </h2>
+              <p>
+                Travelling can be stressful. particularly, if you’re unfamiliar
+                with the area or worried about missing your flight. That’s where
+                we can help. Manchester airport taxis provides a comfortable and
+                convenient way to get you to your desired location.
+              </p>
 
-            <!-- Buttons container -->
-            <div>
-              <button
-                class="bg-main text-black px-16 py-4 font-medium mt-8"
-                style="
-                  box-shadow: 30px 30px 50px rgba(255, 207, 23, 0.07);
-                  border-radius: 37.5px 37.5px 0px 37.5px;
-                "
-              >
-                Know More
-              </button>
+              <!-- Buttons container -->
+              <div>
+                <button
+                  class="bg-main text-black px-16 py-4 font-medium mt-8 duration-300 hover:bg-transparent hover:border hover:border-main hover:text-main"
+                  style="
+                    box-shadow: 30px 30px 50px rgba(255, 207, 23, 0.07);
+                    border-radius: 37.5px 37.5px 0px 37.5px;
+                  "
+                >
+                  Know More
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -453,80 +468,86 @@
 
       <!-- Vehicles -->
       <section class="my-24">
-        <div class="flex px-6 max-w-6xl mx-auto gap-10">
-          <div class="w-full">
-            <h2 class="text-5xl text-black mb-4">
-              <span class="text-main">Range </span>
-              Of Vehicles
-            </h2>
-            <p>
-              Whether you’re travelling by yourself, with family or in a larger
-              group, Manchester airport taxis are available to accommodate your
-              needs. Furthermore, with vehicles ranging from saloons, estates,
-              MPV’s, executive, and minibuses (subject to availability), you can
-              find the perfect option for your specific requirements.<br /><br />
-              Also, with our airport transfers, you won’t have to worry about
-              finding parking, navigating unfamiliar roads, or even paying for
-              tolls and parking fees.<br /><br />
-              We have designed our airport transfer service to meet the needs of
-              all travellers, whether you’re arriving for business or leisure.
-              Manchester airport taxi service offers a convenient and reliable
-              transport solution for anyone travelling to or from Manchester.
-            </p>
+        <div class="max-w-6xl mx-auto px-6 xl:px-0">
+          <div class="flex flex-col md:flex-row md:gap-10">
+            <div class="w-full">
+              <h2 class="text-4xl sm:text-5xl text-black mb-4">
+                <span class="text-main">Range </span>
+                Of Vehicles
+              </h2>
+              <p>
+                Whether you’re travelling by yourself, with family or in a
+                larger group, Manchester airport taxis are available to
+                accommodate your needs. Furthermore, with vehicles ranging from
+                saloons, estates, MPV’s, executive, and minibuses (subject to
+                availability), you can find the perfect option for your specific
+                requirements.<br /><br />
+                Also, with our airport transfers, you won’t have to worry about
+                finding parking, navigating unfamiliar roads, or even paying for
+                tolls and parking fees.<br /><br />
+                We have designed our airport transfer service to meet the needs
+                of all travellers, whether you’re arriving for business or
+                leisure. Manchester airport taxi service offers a convenient and
+                reliable transport solution for anyone travelling to or from
+                Manchester.
+              </p>
 
-            <!-- Buttons container -->
-            <div>
-              <button
-                class="bg-main text-black px-16 py-4 font-medium mt-8"
-                style="
-                  box-shadow: 30px 30px 50px rgba(255, 207, 23, 0.07);
-                  border-radius: 37.5px 37.5px 0px 37.5px;
-                "
-              >
-                Know More
-              </button>
+              <!-- Buttons container -->
+              <div>
+                <button
+                  class="bg-main text-black px-16 py-4 font-medium mt-8 duration-300 hover:bg-transparent hover:border hover:border-main hover:text-main"
+                  style="
+                    box-shadow: 30px 30px 50px rgba(255, 207, 23, 0.07);
+                    border-radius: 37.5px 37.5px 0px 37.5px;
+                  "
+                >
+                  Know More
+                </button>
+              </div>
             </div>
-          </div>
-          <div class="w-full">
-            <img src="./assets/images/car.png" alt="Door opened" />
+            <div class="w-full">
+              <img src="./assets/images/car.png" alt="Door opened" />
+            </div>
           </div>
         </div>
       </section>
 
       <!-- Safety & Comfort -->
       <section class="my-24 bg-main bg-opacity-10">
-        <div class="flex px-6 max-w-6xl mx-auto gap-10 py-12">
-          <div class="w-full relative">
-            <img
-              class=""
-              src="./assets/images/family-travel.svg"
-              alt="Yellow
-            rectangle"
-            />
-          </div>
+        <div class="max-w-6xl mx-auto px-6 xl:px-0">
+          <div class="flex flex-col md:flex-row md:gap-10 py-12">
+            <div class="w-full">
+              <img
+                class=""
+                src="./assets/images/family-travel.svg"
+                alt="Yellow
+              rectangle"
+              />
+            </div>
 
-          <div class="w-full pt-8">
-            <h2 class="text-5xl text-black mb-4">
-              Safety and <span class="text-main">Comfort</span>
-            </h2>
-            <p class="">
-              Travelling can be stressful. particularly, if you’re unfamiliar
-              with the area or worried about missing your flight. That’s where
-              we can help. Manchester airport taxis provides a comfortable and
-              convenient way to get you to your desired location.
-            </p>
+            <div class="w-full md:pt-8 text-center md:text-left">
+              <h2 class="text-4xl sm:text-5xl text-black mb-4">
+                Safety and <span class="text-main">Comfort</span>
+              </h2>
+              <p class="">
+                Travelling can be stressful. particularly, if you’re unfamiliar
+                with the area or worried about missing your flight. That’s where
+                we can help. Manchester airport taxis provides a comfortable and
+                convenient way to get you to your desired location.
+              </p>
 
-            <!-- Buttons container -->
-            <div>
-              <button
-                class="bg-main text-black px-16 py-4 font-medium mt-8"
-                style="
-                  box-shadow: 30px 30px 50px rgba(255, 207, 23, 0.07);
-                  border-radius: 37.5px 37.5px 0px 37.5px;
-                "
-              >
-                Know More
-              </button>
+              <!-- Buttons container -->
+              <div>
+                <button
+                  class="bg-main text-black px-16 py-4 font-medium mt-8 duration-300 hover:bg-transparent hover:border hover:border-main hover:text-main"
+                  style="
+                    box-shadow: 30px 30px 50px rgba(255, 207, 23, 0.07);
+                    border-radius: 37.5px 37.5px 0px 37.5px;
+                  "
+                >
+                  Know More
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -537,7 +558,7 @@
         <div class="max-w-6xl mx-auto px-6 py-12 xl:px-0">
           <div class="w-full h-full flex justify-center items-center">
             <div class="text-white py-10 text-center">
-              <h2 class="text-5xl mb-6">
+              <h2 class="text-4xl sm:text-5xl mb-6">
                 Valued <span class="text-main">Customers</span>
               </h2>
               <p class="max-w-3xl">
@@ -560,17 +581,21 @@
 
       <!-- Features -->
       <section class="my-24">
-        <div class="max-w-6xl mx-auto">
-          <div class="grid grid-cols-4 gap-4">
+        <div class="max-w-6xl mx-auto px-6 xl:px-0">
+          <div class="grid md:grid-cols-4 gap-4">
             <!-- Feature 1 -->
             <div
-              class="text-center w-full flex flex-col items-center py-6 px-3"
+              class="text-center w-full py-6 px-3 rounded-xl"
               style="box-shadow: 0px 12px 60px rgba(0, 115, 236, 0.07)"
             >
-              <img class="s" src="./assets/images/location.svg" alt="" />
+              <div class="w-full flex items-center justify-center ml-6">
+                <img class="" src="./assets/images/location.svg" alt="" />
+              </div>
               <div>
-                <h3 class="">Meetings & Events</h3>
-                <p class="">
+                <h3 class="text-2xl font-semibold text-black sm:text-3xl mb-2">
+                  Meetings & Events
+                </h3>
+                <p>
                   When you need to get to that important meeting or event,
                   Manchester Airport Taxis are a great option as you can sit
                   back, relax, and enjoy the scenery or ev...
@@ -581,13 +606,17 @@
 
             <!-- Feature 2 -->
             <div
-              class="text-center flex flex-col items-center py-6 px-3"
+              class="text-center w-full py-6 px-3 rounded-xl"
               style="box-shadow: 0px 12px 60px rgba(0, 115, 236, 0.07)"
             >
-              <img class="s" src="./assets/images/sheild.svg" alt="" />
+              <div class="w-full flex items-center justify-center ml-6">
+                <img class="" src="./assets/images/sheild.svg" alt="" />
+              </div>
               <div>
-                <h3 class="">Reliable Service</h3>
-                <p class="">
+                <h3 class="text-2xl font-semibold text-black sm:text-3xl mb-2">
+                  Reliable Service
+                </h3>
+                <p>
                   We offer a reliable and punctual service specialising in
                   airport transfers and long-distance trips. Our goal is to
                   provide the highest quality travel expe...
@@ -598,13 +627,17 @@
 
             <!-- Feature 3 -->
             <div
-              class="text-center flex flex-col items-center py-6 px-3"
+              class="text-center w-full py-6 px-3 rounded-xl"
               style="box-shadow: 0px 12px 60px rgba(0, 115, 236, 0.07)"
             >
-              <img class="s" src="./assets/images/clock.svg" alt="" />
+              <div class="w-full flex items-center justify-center ml-6">
+                <img class="" src="./assets/images/clock.svg" alt="" />
+              </div>
               <div>
-                <h3 class="">Meet And Greet</h3>
-                <p class="">
+                <h3 class="text-2xl font-semibold text-black sm:text-3xl mb-2">
+                  Meet And Greet
+                </h3>
+                <p>
                   Meet and greet service is available upon request. Our drivers
                   will welcome you with a smile and will happily assist with
                   your luggage.
@@ -614,13 +647,17 @@
 
             <!-- Feature 4 -->
             <div
-              class="text-center flex flex-col items-center py-6 px-3"
+              class="text-center w-full py-6 px-3 rounded-xl"
               style="box-shadow: 0px 12px 60px rgba(0, 115, 236, 0.07)"
             >
-              <img class="s" src="./assets/images/road.svg" alt="" />
+              <div class="w-full flex items-center justify-center ml-6">
+                <img class="" src="./assets/images/road.svg" alt="" />
+              </div>
               <div>
-                <h3 class="">SEA Journey</h3>
-                <p class="">
+                <h3 class="text-2xl font-semibold text-black sm:text-3xl mb-2">
+                  SEA Journey
+                </h3>
+                <p>
                   If you want to feel grounded and have a comfortable ride after
                   a sea journey, we can provide you with a suitable vehicle and
                   an experienced and professional driver.s
@@ -633,13 +670,13 @@
 
       <!-- Benefits Of Booking -->
       <section class="my-24">
-        <div class="max-w-6xl mx-auto">
-          <h2 class="text-center text-5xl text-black mb-6">
+        <div class="max-w-6xl mx-auto px-6 xl:px-0">
+          <h2 class="text-center text-4xl sm:text-5xl text-black mb-6">
             <span class="text-main">Benefits</span> Of Booking With Us
           </h2>
-          <div class="w-full flex gap-12">
+          <div class="w-full flex flex-col md:flex-row md:gap-10">
             <img class="w-full" src="./assets/images/taxi.svg" alt="Taxi" />
-            <div class="w-full pt-10 space-y-4">
+            <div class="w-full space-y-4 md:pt-10">
               <img src="./assets/images/item-2.svg" alt="" />
               <img src="./assets/images/item-1.svg" alt="" />
               <img src="./assets/images/item-3.svg" alt="" />
@@ -651,27 +688,31 @@
 
       <!-- Features -->
       <section class="bg-main bg-opacity-20">
-        <div class="max-w-6xl mx-auto flex items-center justify-center py-12">
-          <div class="flex justify-between w-full">
-            <div class="flex flex-col items-center gap-2">
-              <img src="./assets/images/dark-sheild.svg" alt="" />
-              <h3 class="text-black text-2xl font-semibold">
-                Surge-free Guarantee
-              </h3>
-            </div>
+        <div class="max-w-6xl mx-auto px-6 xl:px-0">
+          <div class="w-full flex items-center justify-center py-12">
+            <div
+              class="w-full flex flex-wrap justify-center items-center gap-16 lg:gap-0 lg:justify-between"
+            >
+              <div class="flex flex-col items-center gap-2">
+                <img src="./assets/images/dark-sheild.svg" alt="" />
+                <h3 class="text-black text-2xl font-semibold">
+                  Surge-free Guarantee
+                </h3>
+              </div>
 
-            <div class="flex flex-col items-center gap-2">
-              <img src="./assets/images/flight.svg" alt="" />
-              <h3 class="text-black text-2xl font-semibold">
-                Book for Now or Later
-              </h3>
-            </div>
+              <div class="flex flex-col items-center gap-2">
+                <img src="./assets/images/flight.svg" alt="" />
+                <h3 class="text-black text-2xl font-semibold">
+                  Book for Now or Later
+                </h3>
+              </div>
 
-            <div class="flex flex-col items-center gap-2">
-              <img src="./assets/images/crypto.svg" alt="" />
-              <h3 class="text-black text-2xl text-center font-semibold">
-                Cashless & <br />Cryptocurrency Payment
-              </h3>
+              <div class="flex flex-col items-center gap-2">
+                <img src="./assets/images/crypto.svg" alt="" />
+                <h3 class="text-black text-2xl text-center font-semibold">
+                  Cashless & <br />Cryptocurrency Payment
+                </h3>
+              </div>
             </div>
           </div>
         </div>
@@ -679,22 +720,24 @@
 
       <!-- Testimonials -->
       <section class="my-24">
-        <h2 class="text-center text-5xl text-black mb-3">
+        <h2 class="text-center text-4xl sm:text-5xl text-black mb-3">
           What Our <span class="text-main">Client</span> Says
         </h2>
         <p class="text-center">
           Our Clients leave us bunch of smilies with our services and we love
           them
         </p>
-        <div class="max-w-6xl mx-auto px-6 mt-6">
+        <div class="max-w-6xl mx-auto px-6 mt-10 xl:px-0">
           <div class="text-center grid place-items-center">
             <img src="./assets/images/Ellipse 1357.png" alt="" />
             <!-- Data Container -->
             <div class="grid place-items-center">
-              <h3 class="">Charlotte Copeland</h3>
-              <h4 class="">Los Angeles, CA</h4>
+              <h3 class="text-2xl font-semibold text-black mt-2">
+                Charlotte Copeland
+              </h3>
+              <h4 class="my-1">Los Angeles, CA</h4>
               <img src="./assets/images/stars.svg" alt="" />
-              <p class="">
+              <p class="mt-6 font-medium text-black">
                 Excellent service. Used for airport transport. Arrived early and
                 checked in with me before return flight. Had a 3.5hr delay but
                 arrived in time nonetheless. Very accommodating and pleasant.
@@ -706,13 +749,15 @@
       </section>
 
       <!-- Book Taxi -->
-      <section>
+      <section class="px-6 xl:px-0">
         <div class="max-w-6xl mx-auto bg-main py-3 rounded-3xl">
-          <div class="flex justify-center items-center px-6">
+          <div class="flex flex-col px-6 py-12 gap-10 md:flex-row">
             <!-- Data Container -->
             <div class="w-full">
-              <h2 class="text-5xl text-black mb-3">Call Us To Book A Taxi</h2>
-              <p class="">Our agents will be happy to help</p>
+              <h2 class="text-4xl sm:text-5xl text-black mb-3">
+                Call Us To Book A Taxi
+              </h2>
+              <p>Our agents will be happy to help</p>
 
               <!-- Buttons container -->
               <div>
@@ -735,10 +780,16 @@
     </main>
 
     <!-- Footer -->
-    <footer class="mt-24 mb-12">
+    <footer class="mt-12 mb-4 px-6 xl:px-0">
       <div class="max-w-6xl mx-auto bg-black rounded-3xl pt-10 pb-3">
-        <div class="flex w-full justify-between items-center px-6">
-          <img src="./assets/images/Logo-Footer.svg" alt="Footer logo" />
+        <div
+          class="flex w-full flex-col md:flex-row md:justify-between md:items-center px-6 gap-12 md:gap-0"
+        >
+          <img
+            class="w-[50%] md:w-[30%]"
+            src="./assets/images/Logo-Footer.svg"
+            alt="Footer logo"
+          />
 
           <div class="text-white">
             <h3 class="text-2xl mb-3">Address</h3>
