@@ -124,7 +124,14 @@
         </ul>
 
         <div class="hidden md:block">
-          <a class="inline-flex gap-3 text-black" href="tel:07970399516">
+          <a
+            class="inline-flex gap-3 text-black px-12 py-4 font-medium border"
+            style="
+              box-shadow: 30px 30px 50px rgba(255, 207, 23, 0.07);
+              border-radius: 37.5px 37.5px 0px 37.5px;
+            "
+            href="tel:07970399516"
+          >
             <img src="./assets/images/calling.svg" alt="Phone icon" />
             07970399516
           </a>
@@ -149,12 +156,16 @@
     <!-- Main -->
     <main class="overflow-hidden">
       <section class="mt-10">
-        <div class="max-w-6xl mx-auto">
-          <div class="flex justify-between w-full items-center gap-10">
+        <div class="max-w-6xl mx-auto px-6 xl:px-0">
+          <div
+            class="flex flex-col md:flex-row md:justify-between w-full md:items-center gap-10"
+          >
             <!-- Data Container -->
             <div class="w-full">
-              <span class="text-main">About Us</span>
-              <h2 class="text-5xl font-medium mb-3 text-black">
+              <span class="text-main font-medium uppercase tracking-widest"
+                >About Us</span
+              >
+              <h2 class="text-4xl sm:text-5xl font-semibold mb-3 text-black">
                 Manchester <span class="text-main">Airport</span> Taxi
               </h2>
               <p class="">
@@ -191,8 +202,10 @@
 
       <!-- Our Values -->
       <section class="bg-main bg-opacity-20 my-24">
-        <div class="max-w-6xl mx-auto">
-          <div class="w-full flex justify-between items-center gap-10">
+        <div class="max-w-6xl mx-auto px-6 xl:px-0">
+          <div
+            class="w-full flex flex-col md:flex-row md:justify-between md:items-center gap-10 py-10"
+          >
             <img
               src="./assets/images/about__features.svg"
               alt="Our Values"
@@ -220,13 +233,49 @@
           </div>
         </div>
       </section>
+
+      <!-- Book Taxi -->
+      <section class="px-6 xl:px-0">
+        <div class="max-w-6xl mx-auto bg-main py-3 rounded-3xl">
+          <div class="flex flex-col px-6 py-12 gap-10 md:flex-row">
+            <!-- Data Container -->
+            <div class="w-full">
+              <h2 class="text-4xl sm:text-5xl text-black mb-3 font-semibold">
+                Call Us To Book A Taxi
+              </h2>
+              <p>Our agents will be happy to help</p>
+
+              <!-- Buttons container -->
+              <div>
+                <button
+                  class="bg-white text-black px-16 py-4 font-medium mt-8"
+                  style="
+                    box-shadow: 30px 30px 50px rgba(255, 207, 23, 0.07);
+                    border-radius: 37.5px 37.5px 0px 37.5px;
+                  "
+                >
+                  07970399516
+                </button>
+              </div>
+            </div>
+
+            <img class="w-[80%]" src="./assets/images/call.png" alt="" />
+          </div>
+        </div>
+      </section>
     </main>
 
     <!-- Footer -->
-    <footer class="mt-24 mb-12">
+    <footer class="mt-12 mb-4 px-6 xl:px-0">
       <div class="max-w-6xl mx-auto bg-black rounded-3xl pt-10 pb-3">
-        <div class="flex w-full justify-between items-center px-6">
-          <img src="./assets/images/Logo-Footer.svg" alt="Footer logo" />
+        <div
+          class="flex w-full flex-col md:flex-row md:justify-between md:items-center px-6 gap-12 md:gap-0"
+        >
+          <img
+            class="w-[50%] md:w-[30%]"
+            src="./assets/images/Logo-Footer.svg"
+            alt="Footer logo"
+          />
 
           <div class="text-white">
             <h3 class="text-2xl mb-3">Address</h3>
