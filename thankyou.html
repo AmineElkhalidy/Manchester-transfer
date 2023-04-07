@@ -131,7 +131,14 @@
         </ul>
 
         <div class="hidden md:block">
-          <a class="inline-flex gap-3 text-black" href="tel:07970399516">
+          <a
+            class="inline-flex gap-3 text-black px-12 py-4 font-medium border"
+            style="
+              box-shadow: 30px 30px 50px rgba(255, 207, 23, 0.07);
+              border-radius: 37.5px 37.5px 0px 37.5px;
+            "
+            href="tel:07970399516"
+          >
             <img src="./assets/images/calling.svg" alt="Phone icon" />
             07970399516
           </a>
@@ -156,7 +163,9 @@
     <!-- Main -->
     <main class="overflow-hidden">
       <section class="my-10">
-        <div class="w-full flex flex-col items-center justify-center gap-4">
+        <div
+          class="w-full flex flex-col items-center justify-center gap-4 px-6 xl:px-0"
+        >
           <img src="./assets/images/thankyou.svg" alt="Thank You" />
 
           <div class="text-center">
@@ -171,7 +180,7 @@
             <div class="mt-10">
               <a
                 href="index.html"
-                class="bg-main text-black px-16 py-4 font-medium"
+                class="bg-main text-black px-16 py-4 font-medium duration-300 hover:bg-transparent hover:border hover:border-main hover:text-main"
                 style="
                   box-shadow: 30px 30px 50px rgba(255, 207, 23, 0.07);
                   border-radius: 37.5px 37.5px 0px 37.5px;
@@ -186,10 +195,16 @@
     </main>
 
     <!-- Footer -->
-    <footer class="mt-24 mb-12">
+    <footer class="mt-12 mb-4 px-6 xl:px-0">
       <div class="max-w-6xl mx-auto bg-black rounded-3xl pt-10 pb-3">
-        <div class="flex w-full justify-between items-center px-6">
-          <img src="./assets/images/Logo-Footer.svg" alt="Footer logo" />
+        <div
+          class="flex w-full flex-col md:flex-row md:justify-between md:items-center px-6 gap-12 md:gap-0"
+        >
+          <img
+            class="w-[50%] md:w-[30%]"
+            src="./assets/images/Logo-Footer.svg"
+            alt="Footer logo"
+          />
 
           <div class="text-white">
             <h3 class="text-2xl mb-3">Address</h3>
@@ -215,7 +230,7 @@
         </div>
 
         <div class="w-full px-6 mt-16">
-          <div class="rounded-full py-4 text-center bg-white">
+          <div class="rounded-xl p-6 sm:p-4 text-center bg-white">
             <p class="text-black font-medium">
               Transport Solutions © 2023 All rights reserved. See Privacy Policy
             </p>
